@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finance Business</title>
+
+    <!-- Bootstrap 4.3.1 CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <style>
+     .background-header {
+    top: 0;
+    position: fixed;
+    background-color: #fff !important;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.1);
+}
+header .navbar {
+    padding: 20px 0px;
+}@media (min-width: 992px) {
+    .navbar-expand-lg {
+        -ms-flex-flow: row nowrap;
+        flex-flow: row nowrap;
+        -ms-flex-pack: start;
+        justify-content: flex-start;
+    }
+}
+nav {
+    display: block;
+    unicode-bidi: isolate;
+}:root {
+    --blue: #007bff;
+    --indigo: #6610f2;
+    --purple: #6f42c1;
+    --pink: #e83e8c;
+    --red: #dc3545;
+    --orange: #fd7e14;
+    --yellow: #ffc107;
+    --green: #28a745;
+    --teal: #20c997;
+    --cyan: #17a2b8;
+    --white: #fff;
+    --gray: #6c757d;
+    --gray-dark: #343a40;
+    --primary: #007bff;
+    --secondary: #6c757d;
+    --success: #28a745;
+    --info: #17a2b8;
+    --warning: #ffc107;
+    --danger: #dc3545;
+    --light: #f8f9fa;
+    --dark: #343a40;
+    --breakpoint-xs: 0;
+    --breakpoint-sm: 576px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 992px;
+    --breakpoint-xl: 1200px;
+    --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+html {
+    font-family: sans-serif;
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    -ms-overflow-style: scrollbar;
+    -webkit-tap-highlight-color: transparent;
+}
+*, *:before, *:after {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    text-align: left;
+    background-color: #fff;
+}
+.navbar {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: .5rem 1rem;
+}
+header {
+    position: absolute;
+    z-index: 99999;
+    width: 100%;
+    background-color: transparent !important;
+    height: 80px;
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    -moz-transition: all 0.3s ease-in-out 0s;
+    -o-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+.background-header .navbar {
+    padding: 10px 0px;
+}
+article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
+    display: block;
+}
+        .carousel-inner img {
+            width: 100%;
+            height: 600px;
+            object-fit: cover;
+        }
+        em {
+            color: #a4c639;
+        }
+        a.filled-button {
+            background-color: #a4c639;
+            text-decoration: none;
+            color: #fff;
+            font-size: 13px;
+            text-transform: uppercase;
+            font-weight: 700;
+            padding: 12px 30px;
+            border-radius: 30px;
+            display: inline-block;
+            transition: all 0.3s;
+        }
+        a.filled-button:hover {
+            color: #a4c639;
+            background-color: #fff;
+        }
+        .more-info .left-image img {
+            width: 100%;
+            overflow: hidden;
+        }
+        .khali {
+            margin-top: 140px;
+            background-color: #f7f7f7;
+            padding: 140px 0px;
+        }
+        .testimonial-card {
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        ul{
+         display: flex;
+         list-style-type: none;
+         
+        }
+    </style>
+</head>
+<body>
+    <header class="background-header">
+        <nav class="navbar navbar-expand-lg">
+          <div class="container">
+            <a class="navbar-brand" href="index.html"><h2>Finance Business</h2></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#top">Home
+                    <span class="sr-only">(current)</span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="about.html">About Us</a>
+                </li>  
+                <li class="nav-item">
+                  <a class="nav-link" href="services.html">Our Services</a>
+                </li>                          
+                <li class="nav-item">
+                  <a class="nav-link" href="contact.html">Contact Us</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="one-page.html">One Page</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </header>
+  <!-- Bootstrap Carousel (Image Slider) -->
+  <div id="demo" class="carousel slide" data-ride="carousel">
+    <ul class="carousel-indicators">
+      <li data-target="#demo" data-slide-to="0" class="active"></li>
+      <li data-target="#demo" data-slide-to="1"></li>
+      <li data-target="#demo" data-slide-to="2"></li>
+    </ul>
+  
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="images/slide_01.jpg" alt="Slide 1" class="d-block w-100" style="height: 600px;">
+        <div class="carousel-caption">
+          <h3>Slide Title One</h3>
+          <p>We had such a great time in LA!</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="images/slide_02.jpg" alt="Slide 2" class="d-block w-100" style="height: 600px;">
+        <div class="carousel-caption">
+          <h3>Chicago</h3>
+          <p>Thank you, Chicago!</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="images/slide_03.jpg" alt="Slide 3" class="d-block w-100" style="height: 600px;">
+        <div class="carousel-caption">
+          <h3>New York</h3>
+          <p>We love the Big Apple!</p>
+        </div>
+      </div>
+    </div>
+  
+    <a class="carousel-control-prev" href="#demo" data-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </a>
+    <a class="carousel-control-next" href="#demo" data-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </a>
+  </div>
+  
+    <!-- Request Section -->
+    <div class="request-form bg-success text-white py-4">
+        <div class="container d-flex justify-content-between align-items-center">
+            <div>
+                <h4>Request a call back right now ?</h4>
+                <span>Mauris ut dapibus velit cras interdum nisl ac urna tempor mollis.</span>
+            </div>
+            <div>
+                <a href="contact.html" class="filled-button">Contact Us</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Services Section -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row text-center mb-5">
+                <div class="col-lg-12">
+                    <h2>Financial <em>Services</em></h2>
+                    <p>Aliquam id urna imperdiet libero mollis hendrerit</p>
+                </div>
+            </div>
+            <div class="card-deck">
+                <div class="card">
+                    <img class="card-img-top" src="images/service_01.jpg" alt="Digital Currency">
+                    <div class="card-body">
+                        <h3 class="card-title">Digital Currency</h3>
+                        <p class="card-text">Sed tincidunt dictum lobortis. Aenean tempus diam vel augue luctus dignissim. Nunc ornare leo tortor.</p>
+                        <a href="#" class="filled-button">Read More</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img-top" src="images/service_02.jpg" alt="Market Analysis">
+                    <div class="card-body">
+                        <h3 class="card-title">Market Analysis</h3>
+                        <p class="card-text">Sed tincidunt dictum lobortis. Aenean tempus diam vel augue luctus dignissim. Nunc ornare leo tortor.</p>
+                        <a href="#" class="filled-button">Read More</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img-top" src="images/service_03.jpg" alt="Historical Data">
+                    <div class="card-body">
+                        <h3 class="card-title">Historical Data</h3>
+                        <p class="card-text">Sed tincidunt dictum lobortis. Aenean tempus diam vel augue luctus dignissim. Nunc ornare leo tortor.</p>
+                        <a href="#" class="filled-button">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- More Info Section -->
+    <div class="more-info py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="left-image">
+                        <img src="images/more-info.jpg" alt="More Info">
+                    </div>
+                </div>
+                <div class="col-md-6 d-flex align-items-center">
+                    <div>
+                        <span>Who we are</span>
+                        <h2>Get to know about <em>our company</em></h2>
+                        <p>Curabitur pulvinar sem a leo tempus facilisis. Sed non sagittis neque. Nulla consequat tellus nibh, id molestie felis sagittis ut. Nam ullamcorper tempus ipsum in cursus.</p>
+                        <p>Praesent at dictum metus. Morbi id hendrerit lectus, nec dapibus ex. Etiam ipsum quam, luctus eu egestas eget, tincidunt.</p>
+                        <a href="#" class="filled-button">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Testimonials Section -->
+    <div class="khali">
+        <div class="container text-center">
+            <h2 class="fw-bold">What they say <em>about us</em></h2>
+            <p class="text-muted">TESTIMONIALS FROM OUR GREATEST CLIENTS</p>
+            <div id="testimonialCarousel" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="testimonial-card mx-auto">
+                            <h5 class="fw-bold">George Walker</h5>
+                            <div class="mb-3">Chief Financial Analyst</div>
+                            <p>"Nulla ullamcorper, ipsum vel condimentum congue, mi odio vehicula tellus, sit amet malesuada justo sem sit amet quam. Pellentesque in sagittis lacus."</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="testimonial-card mx-auto">
+                            <h5 class="fw-bold">John Smith</h5>
+                            <div class="mb-3">Market Specialist</div>
+                            <p>"In eget leo ante. Sed nibh leo, laoreet accumsan euismod quis, scelerisque a nunc. Mauris accumsan, arcu id ornare malesuada, est nulla luctus nisi."</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="testimonial-card mx-auto">
+                            <h5 class="fw-bold">Linda Brown</h5>
+                            <div class="mb-3">Creative Director</div>
+                            <p>"Proin tincidunt, nisl eget fringilla dapibus, lacus sem fermentum odio, at placerat leo elit nec ligula. Cras vitae nibh sit amet quam finibus sagittis."</p>
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#testimonialCarousel" data-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </a>
+                <a class="carousel-control-next" href="#testimonialCarousel" data-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>
